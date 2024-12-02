@@ -79,8 +79,10 @@ const pluginSockpuppetCi = function (ctx, options) {
             version: version,
             desc: desc,
         };
-        console.log(`\x1b[32m提示  打包${type}：${_options.appid}=====>>`);
-        if (_options.appName) {
+        if (_options === null || _options === void 0 ? void 0 : _options.appid) {
+            console.log(`\x1b[32m提示  打包${type}：${_options === null || _options === void 0 ? void 0 : _options.appid}=====>>`);
+        }
+        if (_options === null || _options === void 0 ? void 0 : _options.appName) {
             console.log(`\x1b[32m提示  打包${type}：${_options === null || _options === void 0 ? void 0 : _options.appname}=====>>`);
         }
         // 使用基座插件功能

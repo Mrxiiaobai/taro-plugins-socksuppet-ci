@@ -50,8 +50,10 @@ const pluginSockpuppetCi = async function (
     desc: desc,
   };
 
-  console.log(`\x1b[32m提示  打包${type}：${_options.appid}=====>>`);
-  if (_options.appName) {
+  if (_options?.appid) {
+    console.log(`\x1b[32m提示  打包${type}：${_options?.appid}=====>>`);
+  }
+  if (_options?.appName) {
     console.log(`\x1b[32m提示  打包${type}：${_options?.appname}=====>>`);
   }
 
