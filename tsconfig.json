@@ -1,0 +1,18 @@
+{
+  "compilerOptions": {
+    "outDir": "./dist", // 输出目录
+    "module": "CommonJS", // 使用 ESNext 模块系统
+    "target": "ES2015", // 编译目标为 ESNext
+    "moduleResolution": "node", // 模块解析策略
+    "esModuleInterop": true, // 启用对 ES 模块默认导出的兼容性支持
+    "skipLibCheck": true, // 跳过库文件的类型检查
+    // "forceConsistentCasingInFileNames": true, // 强制文件名一致
+    "strict": true, // 启用严格模式
+    "baseUrl": "./", // 模块的基本路径
+    "declaration": true, // 生成类型声明文件
+    "declarationDir": "./types",
+    "sourceMap": true // 可选，生成源映射文件
+  },
+  "include": ["src/**/*.ts"], // 包含的文件
+  "exclude": ["node_modules"] // 排除的文件
+}

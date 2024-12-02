@@ -1,0 +1,38 @@
+{
+  "name": "@maloulab/taro-plugins-socksuppet-ci",
+  "version": "1.0.4",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "npx tsc"
+  },
+  "keywords": [
+    "malou",
+    "@maloulab/taro-plugins-socksuppet-ci",
+    "taro-plugins-socksuppet-ci",
+    "@tarojs/plugin-mini-ci"
+  ],
+  "files": [
+    "dist",
+    "README.md",
+    "types",
+    "index.js",
+    "package.json"
+  ],
+  "publishConfig": {
+    "access": "public",
+    "registry": "https://registry.npmjs.org/"
+  },
+  "author": "savior",
+  "license": "MIT",
+  "description": "",
+  "dependencies": {
+    "@tarojs/plugin-mini-ci": "^4.0.7"
+  },
+  "devDependencies": {
+    "@types/node": "^22.10.1",
+    "ts-loader": "^9.5.1",
+    "typescript": "^5.6.3",
+    "webpack": "5",
+    "webpack-cli": "^5.1.4"
+  }
+}
